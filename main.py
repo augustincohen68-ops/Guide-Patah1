@@ -155,4 +155,9 @@ def main(page: ft.Page):
     page.add(main_layout)
     show_main_menu()
 
-ft.app(target=main)
+```python
+import os
+
+if __name__ == "__main__":
+    port = int(os.getenv("PORT", 8550))
+    ft.app(target=main, view=ft.AppView.WEB_BROWSER, port=port, host="0.0.0.0")
