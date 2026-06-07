@@ -155,7 +155,6 @@ def main(page: ft.Page):
     page.add(main_layout)
     show_main_menu()
 
-```python
 import os
 
 if __name__ == "__main__":
